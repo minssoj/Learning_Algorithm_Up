@@ -3,3 +3,6 @@
 '''
 문제링크 : https://www.codeup.kr/problem.php?id=1041
 '''
+s = input()
+n1 = ord(s)
+print(chr(n1+1))

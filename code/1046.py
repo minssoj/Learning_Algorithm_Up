@@ -1,0 +1,8 @@
+# [기초-산술연산] 정수 3개 입력받아 합과 평균 출력하기
+# minso.jeong@daum.net
+'''
+문제링크 : https://www.codeup.kr/problem.php?id=1046
+'''
+n1, n2, n3 = input().split()
+s = int(n1) + int(n2) + int(n3)
+print('{}\n{:.1f}'.format(s, s/3))
