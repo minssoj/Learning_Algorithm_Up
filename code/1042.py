@@ -3,5 +3,5 @@
 '''
 문제링크 : https://www.codeup.kr/problem.php?id=1042
 '''
-n1, n2 = input().split()
-print(int(n1)//int(n2))
+n1, n2 = map(int, input().split())
+print(n1//n2)

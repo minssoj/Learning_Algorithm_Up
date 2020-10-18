@@ -4,4 +4,4 @@
 문제링크 : https://www.codeup.kr/problem.php?id=1015
 '''
 f = float(input())
-print('{:.2f}'.format(f)
+print('{:.2f}'.format(f))

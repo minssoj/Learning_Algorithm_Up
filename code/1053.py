@@ -4,4 +4,4 @@
 문제링크 : https://www.codeup.kr/problem.php?id=1053
 '''
 n = int(input())
-print(int(n == 0))
+print(int(not(n and 1)))

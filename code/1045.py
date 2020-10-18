@@ -3,8 +3,6 @@
 '''
 문제링크 : https://www.codeup.kr/problem.php?id=1045
 '''
-s1, s2 = input().split()
-n1 = int(s1)
-n2 = int(s2)
+n1, n2 = map(int, input().split())
 print('{}\n{}\n{}\n{}\n{}\n{:.2f}'.format(n1+n2, n1-n2, n1*n2, n1//n2, n1%n2, n1/n2))
 

@@ -3,8 +3,8 @@
 '''
 문제링크 : https://www.codeup.kr/problem.php?id=1051
 '''
-a, b = input().split()
-if int(a) <= int(b):
+a, b = map(int, input().split())
+if a <= b:
     print('1')
 else:
     print('0')

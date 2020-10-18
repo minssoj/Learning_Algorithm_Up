@@ -3,5 +3,5 @@
 '''
 문제링크 : https://www.codeup.kr/problem.php?id=1027
 '''
-y, m, d = input().split('.')
-print('{:02d}-{:02d}-{:04d}'.format(int(d), int(m), int(y)))
+y, m, d = map(int, input().split('.'))
+print('{:02d}-{:02d}-{:04d}'.format(d, m, y))

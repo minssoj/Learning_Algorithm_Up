@@ -4,5 +4,6 @@
 문제링크 : https://www.codeup.kr/problem.php?id=1013
 참고 : https://dojang.io/mod/page/view.php?id=1220
 '''
-num1, num2 = input().split()
-print('{} {}'.format(int(num1), int(num2)))
+# num1, num2 = input().split()
+num1, num2 = map(int, input().split())
+print('{} {}'.format(num1, num2))
