@@ -13,6 +13,33 @@ ny = 1  # 개미굴 다음위치
 d = 0   # 오른쪽 :0, 아래쪽 :1
 
 while True:
+    if m[cy][cx] == 2 or (cy == 8 and cx == 8): # 미로 끝 or 먹이 도달이면 종료
+        m[cy][cx] = 9
+        break
+    m[cy][cx] = 9
+    if m[cy][cx+1] == 0 and d == 1:             # 오른쪽으로 가는 것이 우선
+        d = 0
+        cx = cx + 1
+    else:
+        ny = (1 * d) + cy
+        nx = (1 * (1 - d)) + cx
+        if m[ny][nx] == 1:                      # 장애물을 만나는 경우 방향 변경
+            d = int(not (d))
+            cy = (1 * d) + cy
+            cx = (1 * (1 - d)) + cx
+        else:
+            cy = ny
+            cx = nx
+
+# 결과 출력
+for j in range(10):
+    for i in range(10):
+        print(m[j][i], end=' ')
+    print()
+
+# 처음 코드.... 정답이지만 망한 코드
+'''
+while True:
     while True:
         if m[cy][cx] == 2:
             break
@@ -46,12 +73,5 @@ while True:
     if m[ny][nx] == 2:
         m[ny][nx] = 9
         break
-
-# 결과 출력
-for j in range(10):
-    for i in range(10):
-        print(m[j][i], end=' ')
-    print()
-
-
+'''
 
